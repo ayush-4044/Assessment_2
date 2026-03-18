@@ -8,6 +8,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,8 +35,13 @@ jobs:
       - name: Build APK
         run: flutter build apk --release
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: assessment-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          files: build/app/outputs/flutter-apk/app-release.apk
+          tag_name: v1.0.${{ github.run_number }}
+          name: Release v1.0.${{ github.run_number }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
