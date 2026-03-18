@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "27633609133",
+    "firebase_url": "https://mycityapp-9155e-default-rtdb.firebaseio.com",
+    "project_id": "mycityapp-9155e",
+    "storage_bucket": "mycityapp-9155e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27633609133:android:0d27f1d8737afcb8375924",
+        "android_client_info": {
+          "package_name": "com.example.assessment_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27633609133-vt16qgahvgi084bsfbcsaosu022bqsc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9F3YgcBA8BtS5u7_kFfX9gPqfiprqeQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27633609133-vt16qgahvgi084bsfbcsaosu022bqsc8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "27633609133-mrkiaum7urgb96q108k7rfcrc2s3fqlo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.assessment2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
